@@ -42,7 +42,10 @@ public class EmployeeServlet extends GenericServlet
                                       "<td>"+rs.getString(3)+"</td>"+"<td>"+rs.getInt(4)+"</td>"+"<td>"+
                                       rs.getDate(5)+"</td>"+"<td>"+rs.getInt(6)+"</td>"
                                       +"<td>"+rs.getInt(7)+"</td>"+"<td>"+rs.getInt(8)+"</td></tr>");
-                    
+                    pw.println("<tr><td>"+rs.getInt(1)+"</td><td>"+rs.getString(2)+"</td>"+
+                                      "<td>"+rs.getString(3)+"</td>"+"<td>"+rs.getInt(4)+"</td>"+"<td>"+
+                                      rs.getDate(5)+"</td>"+"<td>"+rs.getInt(6)+"</td>"
+                                      +"<td>"+rs.getInt(7)+"</td>"+"<td>"+rs.getInt(8)+"</td></tr>");
                  }
              pw.println("</table>");
              pw.close();
